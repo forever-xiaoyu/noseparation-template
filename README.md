@@ -19,5 +19,6 @@ A template that front and rear are not separated.
     ├── layui                     
     ├── jquery                     
     ├── template                  
+├── tpl                           # common template
 └── utils                         # some common utils
 ```
