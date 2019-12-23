@@ -4,7 +4,7 @@ A template that front and rear are not separated.
 ## Feature
 >* [jQuery](https://jquery.com/)
 >* [Art-Template](https://aui.github.io/art-template/zh-cn/)
->* [Layui](https://www.layui.com/doc/)
+>* [Bootstrap](https://www.bootcss.com/)
 
 ## Project structure
 ```
@@ -16,9 +16,9 @@ A template that front and rear are not separated.
 ├── fonts                         # fonts
 ├── js                            # pages javascript
 ├── libs                          # framework dependencies
-    ├── layui                     
     ├── jquery                     
     ├── template                  
+    ├── bootstrap                     
 ├── tpl                           # common template
 └── utils                         # some common utils
 ```
