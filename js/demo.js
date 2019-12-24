@@ -14,6 +14,26 @@ $(function () {
     })
   })
 
+  // validator
+  $("#commentForm").validate({
+    rules: {
+      idcard: {
+        card: true
+      }
+    },
+    messages: {
+      // idcard: {
+      //   card: "invalid idcard"
+      // }
+    }
+  });
+  $(".submit-btn").click(function () {
+    if ($("#commentForm").valid()) {
+      alert('ok')
+    }
+  })
+
+
   layui.config({
     base: '../libs/layui/cropper/' //layui自定义layui组件目录
   }).use(['form','croppers'], function () {

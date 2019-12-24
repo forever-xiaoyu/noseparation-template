@@ -5,11 +5,45 @@
   <title>demo</title>
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../libs/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="../css/demo.css">
   <script type="text/javascript" src="../libs/jquery.min.js"></script>
   <script type="text/javascript" src="../libs/layui/layui.all.js"></script>
   <script type="text/javascript" src="../libs/template.js"></script>
+  <script type="text/javascript" src="../libs/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="../libs/jquery.validate.ext.js"></script>
+  <!--<script type="text/javascript" src="../libs/jquery.validate.cn.js"></script>-->
 </head>
 <body>
+  <form class="cmxform" id="commentForm" method="post">
+    <fieldset>
+      <legend>Please provide your name, email address (won't be published) and a comment</legend>
+      <p>
+        <label for="cname">Name (required, at least 2 characters)</label>
+        <input id="cname" name="name" minlength="2" type="text" required>
+      </p>
+      <p>
+        <label for="cemail">E-Mail (optional)</label>
+        <input id="cemail" type="email" name="email">
+      </p>
+      <p>
+        <label for="curl">URL (optional)</label>
+        <input id="curl" type="url" name="url">
+      </p>
+      <p>
+        <label for="ccomment">Your comment (required)</label>
+        <textarea id="ccomment" name="comment" required></textarea>
+      </p>
+      <p>
+        <label for="ccard">Your card (required)</label>
+        <input id="ccard" name="idcard" required>
+      </p>
+      <p>
+        <!--<input class="submit" type="submit" value="Submit">-->
+      </p>
+    </fieldset>
+  </form>
+  <button class="submit-btn">submit</button>
+
   <div class="layui-form-item">
     <div class="layui-input-inline">
       <div class="layui-upload-list" style="margin: 0">
